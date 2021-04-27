@@ -4,7 +4,8 @@ import os
 import sys
 
 
-def main(callable):
+def main():
+    '''this is missing docstring'''
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlinequiz.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -18,5 +19,5 @@ def main(callable):
 
 
 if __name__ == '__main__':
-    main(callable)
+    main()
     
