@@ -5,14 +5,16 @@ phases:
         runtime-versions:
             python: 3.7
         commands:
+            - pip install --upgrade pip
             # Install dependencies needed for running the static analysis
             - pip install -r requirements.txt pylint
             
     pre_build:
         commands:
+            - pylint --disable=C *.py **/*.py
             - python --version
             #- pylint $CODEBUILD_SRC_DIR/*.py pylint
-            - pylint $CODEBUILD_SRC_DIR/onlinequiz/*.py
+            #- pylint $CODEBUILD_SRC_DIR/onlinequiz/*.py --errors-only
             
 artifacts:
     files:
