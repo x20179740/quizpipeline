@@ -11,8 +11,8 @@ phases:
             
     pre_build:
         commands:
-            - pylint --disable=C *.py **/*.py
             - python --version
+            - pylint --disable=C *.py **/*.py
             #- pylint $CODEBUILD_SRC_DIR/*.py pylint
             #- pylint $CODEBUILD_SRC_DIR/onlinequiz/*.py --errors-only
             
