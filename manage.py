@@ -7,7 +7,6 @@ import sys
 def main():
     '''this is missing docstring'''
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlinequiz.settings')
-   #pylint --disable=C0415 *.py **/*.py
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
