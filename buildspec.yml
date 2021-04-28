@@ -11,7 +11,7 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint $CODEBUILD_SRC_DIR/*.py pylint --errors-only
+            #- pylint $CODEBUILD_SRC_DIR/*.py pylint
             - pylint $CODEBUILD_SRC_DIR/demoproj/*.py
             
 artifacts:
