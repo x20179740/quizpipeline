@@ -13,6 +13,7 @@ phases:
         commands:
             - python --version
             - pylint --disable=C *.py **/*.py
+            - pylint --disable=py *.py **/*.py
             #- pylint $CODEBUILD_SRC_DIR/*.py pylint
             #- pylint $CODEBUILD_SRC_DIR/onlinequiz/*.py --errors-only
             
