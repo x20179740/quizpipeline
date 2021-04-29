@@ -3,6 +3,7 @@
 import os
 import sys
 
+
 def main():
     '''this is missing docstring'''
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlinequiz.settings')
